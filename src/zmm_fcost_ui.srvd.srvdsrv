@@ -1,0 +1,4 @@
+@EndUserText.label: 'SERVICE UI Food Cost'
+define service ZMM_FCost_UI {
+  expose ZMM_FC_RP as FoodCost;
+}

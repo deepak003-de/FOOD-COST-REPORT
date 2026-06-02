@@ -1,0 +1,281 @@
+@Metadata.layer: #PARTNER
+@UI.headerInfo.description: {
+    type: #STANDARD,
+    label: 'Food Cost Report'
+}
+
+@UI.headerInfo: {
+    typeName: 'Food Cost Report',
+    typeNamePlural: 'Food Cost Report',
+    title: {
+        type: #STANDARD,
+        label: 'Food Cost Report'
+//        value: 'CompanyCode'
+    }
+}
+annotate entity ZMM_FC_RP
+    with 
+    
+{
+ @UI: {
+      lineItem: [ { position: 10 } ]
+      
+//      selectionField: [{ position: 50 }]      
+    }
+//    @Consumption.filter.selectionType: #RANGE
+    ProfitCenter;
+    @UI: {
+      lineItem: [ { position: 20, importance: #HIGH} ]
+    }   
+    CompanyCode;
+    @UI: {
+      lineItem: [ { position: 30, importance: #HIGH} ]
+    }
+    CompanyCodeCurrency;
+    @UI: {
+      lineItem: [ { position: 40, importance: #HIGH} ]
+    }
+    Beverage_FGR;
+    @UI: {
+      lineItem: [ { position: 50, importance: #HIGH} ]
+    }
+    Food_FGR;
+    @UI: {
+      lineItem: [ { position: 55, importance: #HIGH} ]
+    }
+    Tabaco;
+    @UI: {
+      lineItem: [ { position: 60, importance: #HIGH} ]
+    }      
+    Scrap_FGR;
+    @UI: {
+      lineItem: [ { position: 70, importance: #HIGH} ]
+    }
+    Total_FGR_Sept1;
+    @UI: {
+      lineItem: [ { position: 80, importance: #HIGH} ]
+    }
+    Budget__FGR_June_2024;
+    @UI: {
+      lineItem: [ { position: 90, importance: #HIGH} ]
+    }
+    Beverage_cogs;
+    @UI: {
+      lineItem: [ { position: 100, importance: #HIGH} ]
+    }
+    Liquor_cogs;
+    @UI: {
+      lineItem: [ { position: 110, importance: #HIGH} ]
+    }
+    food_cogs;
+    @UI: {
+      lineItem: [ { position: 120, importance: #HIGH} ]
+    }
+    Packaging_cogs;
+    @UI: {
+      lineItem: [ { position: 130, importance: #HIGH} ]
+    }
+    LP_cogs;
+    @UI: {
+      lineItem: [ { position: 140, importance: #HIGH} ]
+    }
+    Charcoal_COGS;
+    @UI: {
+      lineItem: [ { position: 150, importance: #HIGH} ]
+    }
+    Consumable_COGS;
+    @UI: {
+      lineItem: [ { position: 160, importance: #HIGH} ]
+    }
+    HKEEPING_COGS;
+    @UI: {
+      lineItem: [ { position: 170, importance: #HIGH} ]
+    }
+    STATIONERY_COGS;
+    @UI: {
+      lineItem: [ { position: 180, importance: #HIGH} ]
+    }
+    Uniforms_COGS;
+    @UI: {
+      lineItem: [ { position: 190, importance: #HIGH} ]
+    }
+    FIGLBev_COGS;
+     @UI: {
+      lineItem: [ { position: 200, importance: #HIGH} ]
+    }
+    FIGLFood_COGS;
+    @UI: {
+      lineItem: [ { position: 210, importance: #HIGH} ]
+    }
+    FI_GL_Charcoal;
+//    @UI: {
+//      lineItem: [ { position: 220, importance: #HIGH} ]
+//    }
+//    FI_GL_Packing;
+//    @UI: {
+//      lineItem: [ { position: 230, importance: #HIGH} ]
+//    }
+//    FI_GL_Consumable;
+    @UI: {
+      lineItem: [ { position: 240, importance: #HIGH} ]
+    }
+    FBGST;
+    @UI: {
+      lineItem: [ { position: 250, importance: #HIGH} ]
+    }
+    Non_Food_GST;
+    @UI: {
+      lineItem: [ { position: 260, importance: #HIGH} ]
+    }
+    Food_Amt_CN;
+    @UI: {
+      lineItem: [ { position: 270, importance: #HIGH} ]
+    }
+    Beverage_Amt_CN;
+//    @UI: {
+//      lineItem: [ { position: 280, importance: #HIGH} ]
+//    }
+//    Liquor_Amt_CN;
+//    @UI: {
+//      lineItem: [ { position: 290, importance: #HIGH} ]
+//    }
+//    Packaging_Amt_CN;
+     @UI: {
+        lineItem: [ { position: 300, importance: #HIGH} ]
+     }
+       @EndUserText.quickInfo: 'Stock Transfer In Out & Spoilage & Discount COGS Value'      
+    IUTIn_STCOGS;
+    @UI: {
+      lineItem: [ { position: 310, importance: #HIGH} ]
+    }
+    IUTOut_STCOGS;
+       @UI: {
+        lineItem: [ { position: 320, importance: #HIGH} ]
+        }    
+    Spoilage_STCOGS;
+    @UI: {
+      lineItem: [ { position: 330, importance: #HIGH} ]
+    }
+    FoodTrailRND_STCOGS;
+      @UI: {
+        lineItem: [ { position: 340, importance: #HIGH} ]
+        }    
+    Bar_STCOGS;
+      @UI: {
+        lineItem: [ { position: 350, importance: #HIGH} ]
+        }     
+    Kitchen_STCOGS;
+    @UI: {
+      lineItem: [ { position: 360, importance: #HIGH} ]
+    }
+    StaffMeal_STCOGS;
+//    @UI: {
+//      lineItem: [ { position: 370, importance: #HIGH} ]
+//    }
+//    Discount_STCOGS;
+//    @UI: {
+//      lineItem: [ { position: 380, importance: #HIGH} ]
+//    }
+//    NCK_STCOGS;
+    @UI: {
+      lineItem: [ { position: 390, importance: #HIGH} ]
+    }
+    Beverage_STCOGS;
+        @UI: {
+      lineItem: [ { position: 400, importance: #HIGH} ]
+    }
+    Food_STCOGS;
+     @UI: {
+        lineItem: [ { position: 410, importance: #HIGH} ]
+     }    
+    GrossCOGS_STCOGS;
+        @UI: {
+      lineItem: [ { position: 420, importance: #HIGH} ]
+    }
+    BevCost_STCOGS;
+        @UI: {
+      lineItem: [ { position: 430, importance: #HIGH} ]
+    }
+    FoodCost_STCOGS;
+        @UI: {
+      lineItem: [ { position: 440, importance: #HIGH} ]
+    }
+    FBGross_COGSPercentage;
+     @UI: {
+      lineItem: [ { position: 450, importance: #HIGH} ]
+    }
+    PACKAGINGGross_COGSPercentage;
+     @UI: {
+      lineItem: [ { position: 460, importance: #HIGH} ]
+    }
+    LPGGAS_COGSPercentage;
+     @UI: {
+      lineItem: [ { position:470, importance: #HIGH} ]
+    }
+    CharcoalGross_COGSPercentage;
+     @UI: {
+      lineItem: [ { position: 480, importance: #HIGH} ]
+    }
+    ConsumableGross_COGSPercentage;
+     @UI: {
+      lineItem: [ { position: 490, importance: #HIGH} ]
+    }
+    HKEEPINGGross_COGSPercentage;
+     @UI: {
+      lineItem: [ { position: 500, importance: #HIGH} ]
+    }
+    GrossnetcostBev_Percentage;
+     @UI: {
+      lineItem: [ { position: 510, importance: #HIGH} ]
+    }
+    Grossnetfood_Percentage;
+     @UI: {
+      lineItem: [ { position: 520, importance: #HIGH} ]
+    }
+    BevCost_totalPercentage;
+    @UI: {
+      lineItem: [ { position: 530, importance: #HIGH} ]
+    }
+    FoodCost_totalPercentage;
+    @UI: {
+      lineItem: [ { position: 540, importance: #HIGH} ]
+    }
+    foodBevcostPercentage;
+    @UI: {
+      lineItem: [ { position: 550, importance: #HIGH} ]
+    }
+    FBPKLPCHAR;
+//    @UI: {
+//      lineItem: [ { position: 560, importance: #HIGH} ]
+//    }
+//    FBPKLPPercentage;
+    @UI: {
+      lineItem: [ { position: 570, importance: #HIGH} ]
+    }
+    SpoilageCOGS;
+    @UI: {
+      lineItem: [ { position: 580, importance: #HIGH} ]
+    }
+    CostpAug24_FB;
+    @UI: {
+      lineItem: [ { position: 590, importance: #HIGH} ]
+    }
+    CostpAug24_COGS;
+    @UI: {
+      lineItem: [ { position: 600, importance: #HIGH} ]
+    }
+    Cogs_FGPercentage;
+    @UI: {
+      lineItem: [ { position: 610, importance: #HIGH} ]
+    }
+    Cogs_COGSPercentage;
+    @UI: {
+      lineItem: [ { position: 620, importance: #HIGH} ]
+    }
+    Bugsvssales;
+    @UI: {
+      lineItem: [ { position: 630, importance: #HIGH} ]
+    }
+    Remark;
+    
+}
